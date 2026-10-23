@@ -1,0 +1,58 @@
+{
+  "file": "results/burgers_data.npz",
+  "counts": {
+    "train": 200,
+    "val": 40,
+    "test": 40
+  },
+  "resolutions": [
+    64,
+    128,
+    256,
+    512,
+    1024
+  ],
+  "n_high": 2048,
+  "nu": 0.003183098861837907,
+  "T": 1.0,
+  "reference_cfl": 0.8,
+  "seed": 0,
+  "split_generation_seconds": {
+    "train": 63.91908404196147,
+    "val": 12.589663541002665,
+    "test": 13.187813791970257
+  },
+  "check_seconds": 7.231159958988428,
+  "wall_seconds": 97.24531545903301,
+  "reference_checks": [
+    {
+      "train_index": 0,
+      "fixed_grid_time_halving_rel_l2": 0.00015233342172301536,
+      "grid_doubling_rel_l2": 0.00021992565622413384,
+      "reference_n": 2048,
+      "comparison_n": 4096,
+      "reference_cfl": 0.8,
+      "half_step_cfl": 0.4
+    },
+    {
+      "train_index": 1,
+      "fixed_grid_time_halving_rel_l2": 7.769553258984285e-05,
+      "grid_doubling_rel_l2": 0.00012113874821268298,
+      "reference_n": 2048,
+      "comparison_n": 4096,
+      "reference_cfl": 0.8,
+      "half_step_cfl": 0.4
+    },
+    {
+      "train_index": 2,
+      "fixed_grid_time_halving_rel_l2": 0.0001772099591271277,
+      "grid_doubling_rel_l2": 0.00025778798298201484,
+      "reference_n": 2048,
+      "comparison_n": 4096,
+      "reference_cfl": 0.8,
+      "half_step_cfl": 0.4
+    }
+  ],
+  "check_rtol": 0.002,
+  "scope": "Selected forward-Euler grid and time refinement differences are empirical sensitivity checks, not bounds on every label's error."
+}

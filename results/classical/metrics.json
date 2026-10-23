@@ -1,0 +1,540 @@
+{
+  "environment": {
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "cpu_model": "arm",
+    "python": "3.14.3",
+    "numpy": "2.3.5",
+    "torch": "2.14.0",
+    "platform": "macOS-26.6.1-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "torch_threads": 8,
+    "cuda_available": false,
+    "cpu_count": 12
+  },
+  "convergence": [
+    {
+      "n": 128,
+      "method": "FD explicit Euler",
+      "relative_l2": 0.0059008352140107485,
+      "observed_order": 0.11097662617613427,
+      "mass_drift": 1.7379760824942636e-16
+    },
+    {
+      "n": 128,
+      "method": "FD implicit-diffusion Euler",
+      "relative_l2": 0.00591834952734807,
+      "observed_order": 0.18595820000343258,
+      "mass_drift": 1.1481701006621492e-16
+    },
+    {
+      "n": 256,
+      "method": "FD explicit Euler",
+      "relative_l2": 0.005463943419365233,
+      "observed_order": 1.5718588144697652,
+      "mass_drift": 5.551115123125783e-17
+    },
+    {
+      "n": 256,
+      "method": "FD implicit-diffusion Euler",
+      "relative_l2": 0.005202614105857561,
+      "observed_order": 1.6161336677334337,
+      "mass_drift": 1.1102230246251565e-16
+    },
+    {
+      "n": 512,
+      "method": "FD explicit Euler",
+      "relative_l2": 0.0018379324319984756,
+      "observed_order": 1.9088866498252874,
+      "mass_drift": 5.551115123125783e-17
+    },
+    {
+      "n": 512,
+      "method": "FD implicit-diffusion Euler",
+      "relative_l2": 0.0016971370051633797,
+      "observed_order": 1.3898945105370923,
+      "mass_drift": 1.1102230246251565e-16
+    },
+    {
+      "n": 1024,
+      "method": "FD explicit Euler",
+      "relative_l2": 0.0004894376804534389,
+      "observed_order": 2.072543056667538,
+      "mass_drift": 1.1102230246251565e-16
+    },
+    {
+      "n": 1024,
+      "method": "FD implicit-diffusion Euler",
+      "relative_l2": 0.0006476150974554454,
+      "observed_order": 1.136272361049895,
+      "mass_drift": 0.0
+    },
+    {
+      "n": 2048,
+      "method": "FD explicit Euler",
+      "relative_l2": 0.00011635894476636883,
+      "observed_order": null,
+      "mass_drift": 5.551115123125783e-17
+    },
+    {
+      "n": 2048,
+      "method": "FD implicit-diffusion Euler",
+      "relative_l2": 0.0002946218150616184,
+      "observed_order": null,
+      "mass_drift": 5.551115123125783e-17
+    }
+  ],
+  "reference_checks": {
+    "reference_grid_n": 8192,
+    "reference_grid_refinement_relative_l2_n4096_to_n8192": 2.326323264162206e-05,
+    "reference_fixed_grid_step_refinement_relative_l2_n4096": 1.1687427097097963e-05,
+    "explicit_euler_step_refinement_relative_l2_n512": 0.0006464992938684264,
+    "implicit_euler_step_refinement_relative_l2_n512": 0.0005951957974684086,
+    "note": "These refinement differences measure sensitivity, not certified continuum error bounds."
+  },
+  "synthesis_rows": [
+    {
+      "label": "FD explicit Euler 128, linear interpolation",
+      "n": 1024,
+      "rel_l2": 0.036080634512557344,
+      "abs_l2": 0.021649973312142266,
+      "true_l2": 0.6000441401496779,
+      "max_error": 0.1717079312697135,
+      "mass_drift": 1.1102230246251565e-16,
+      "energy_initial": 0.5,
+      "energy": 0.17733996921387593,
+      "energy_true": 0.18002648506398317,
+      "energy_change": -0.32266003078612404,
+      "layer_width": 0.03206646621991564,
+      "layer_width_true": 0.017270320307834937,
+      "layer_center": 0.0,
+      "layer_half_width": 0.1,
+      "err_in_layer": 0.0720372162795711,
+      "squared_error_in_layer": 0.0004633971952753564,
+      "error_fraction_in_layer": 0.9886411207756198,
+      "err_outside_layer": 0.004434416981920716,
+      "squared_error_outside_layer": 5.324149141115873e-06,
+      "error_fraction_outside_layer": 0.011358879224380307,
+      "highest_band": {
+        "k_lo": 512,
+        "k_hi_exclusive": 513,
+        "power_true": 2.958546818452341e-37,
+        "power_pred": 8.324792117577467e-37,
+        "error_power": 2.120891946993027e-36,
+        "true_power_fraction": 1.643395313417826e-36,
+        "signal_resolved": false,
+        "relative_error": null,
+        "power_ratio": null
+      },
+      "spectral_bands": [
+        {
+          "k_lo": 0,
+          "k_hi_exclusive": 4,
+          "power_true": 0.15342203727065382,
+          "power_pred": 0.1520187047225856,
+          "error_power": 3.2442475077143874e-06,
+          "true_power_fraction": 0.8522192566061941,
+          "signal_resolved": true,
+          "relative_error": 0.004598467454678323,
+          "power_ratio": 0.9908531227127915
+        },
+        {
+          "k_lo": 4,
+          "k_hi_exclusive": 8,
+          "power_true": 0.016238152674561253,
+          "power_pred": 0.01602797841642092,
+          "error_power": 7.269748230555345e-07,
+          "true_power_fraction": 0.09019868753639254,
+          "signal_resolved": true,
+          "relative_error": 0.006691005317173221,
+          "power_ratio": 0.9870567630227056
+        },
+        {
+          "k_lo": 8,
+          "k_hi_exclusive": 16,
+          "power_true": 0.006992584770174221,
+          "power_pred": 0.006718973782846419,
+          "error_power": 3.1461011140479186e-06,
+          "true_power_fraction": 0.03884197798834427,
+          "signal_resolved": true,
+          "relative_error": 0.021211308882179803,
+          "power_ratio": 0.9608712663027202
+        },
+        {
+          "k_lo": 16,
+          "k_hi_exclusive": 32,
+          "power_true": 0.002697912832459638,
+          "power_pred": 0.002281370244392034,
+          "error_power": 2.161734449293342e-05,
+          "true_power_fraction": 0.014986199566695833,
+          "signal_resolved": true,
+          "relative_error": 0.08951322718066539,
+          "power_ratio": 0.8456056166618809
+        },
+        {
+          "k_lo": 32,
+          "k_hi_exclusive": 64,
+          "power_true": 0.0006349045609871627,
+          "power_pred": 0.0002720320847540527,
+          "error_power": 0.00010761533774650479,
+          "true_power_fraction": 0.0035267286408525475,
+          "signal_resolved": true,
+          "relative_error": 0.4117018922095449,
+          "power_ratio": 0.42846138060670347
+        },
+        {
+          "k_lo": 64,
+          "k_hi_exclusive": 128,
+          "power_true": 4.072331651846521e-05,
+          "power_pred": 1.707033932411513e-05,
+          "error_power": 9.486493288335794e-05,
+          "true_power_fraction": 0.00022620736334429765,
+          "signal_resolved": true,
+          "relative_error": 1.5262696979791808,
+          "power_ratio": 0.4191785145096154
+        },
+        {
+          "k_lo": 128,
+          "k_hi_exclusive": 256,
+          "power_true": 1.6963570496767708e-07,
+          "power_pred": 3.0947425191865225e-06,
+          "error_power": 2.40207441982404e-06,
+          "true_power_fraction": 9.422819365016593e-07,
+          "signal_resolved": true,
+          "relative_error": 3.7630032655413137,
+          "power_ratio": 18.243461892507856
+        },
+        {
+          "k_lo": 256,
+          "k_hi_exclusive": 512,
+          "power_true": 2.9236101118086563e-12,
+          "power_pred": 7.448810335584267e-07,
+          "error_power": 7.436592207982385e-07,
+          "true_power_fraction": 1.6239888873959725e-11,
+          "signal_resolved": true,
+          "relative_error": 504.3444615156987,
+          "power_ratio": 254781.248207414
+        },
+        {
+          "k_lo": 512,
+          "k_hi_exclusive": 513,
+          "power_true": 2.958546818452341e-37,
+          "power_pred": 8.324792117577467e-37,
+          "error_power": 2.120891946993027e-36,
+          "true_power_fraction": 1.643395313417826e-36,
+          "signal_resolved": false,
+          "relative_error": null,
+          "power_ratio": null
+        }
+      ]
+    },
+    {
+      "label": "FD explicit Euler 512, linear interpolation",
+      "n": 1024,
+      "rel_l2": 0.0032239142610515892,
+      "abs_l2": 0.0019344908606889852,
+      "true_l2": 0.6000441401496779,
+      "max_error": 0.020299937229954435,
+      "mass_drift": 5.551115123125783e-17,
+      "energy_initial": 0.5,
+      "energy": 0.1795046221834658,
+      "energy_true": 0.18002648506398317,
+      "energy_change": -0.3204953778165342,
+      "layer_width": 0.018581606506281448,
+      "layer_width_true": 0.017270320307834937,
+      "layer_center": 0.0,
+      "layer_half_width": 0.1,
+      "err_in_layer": 0.006025521119140094,
+      "squared_error_in_layer": 3.242117740440656e-06,
+      "error_fraction_in_layer": 0.8663540661078186,
+      "err_outside_layer": 0.001359114293355776,
+      "squared_error_outside_layer": 5.001371496485546e-07,
+      "error_fraction_outside_layer": 0.1336459338921812,
+      "highest_band": {
+        "k_lo": 512,
+        "k_hi_exclusive": 513,
+        "power_true": 2.958546818452341e-37,
+        "power_pred": 3.2075995458299615e-37,
+        "error_power": 1.2327261013819156e-36,
+        "true_power_fraction": 1.643395313417826e-36,
+        "signal_resolved": false,
+        "relative_error": null,
+        "power_ratio": null
+      },
+      "spectral_bands": [
+        {
+          "k_lo": 0,
+          "k_hi_exclusive": 4,
+          "power_true": 0.15342203727065382,
+          "power_pred": 0.15301596428428343,
+          "error_power": 2.741358513245719e-07,
+          "true_power_fraction": 0.8522192566061941,
+          "signal_resolved": true,
+          "relative_error": 0.001336715688802401,
+          "power_ratio": 0.9973532290823773
+        },
+        {
+          "k_lo": 4,
+          "k_hi_exclusive": 8,
+          "power_true": 0.016238152674561253,
+          "power_pred": 0.01620608842350573,
+          "error_power": 1.5887844396990167e-08,
+          "true_power_fraction": 0.09019868753639254,
+          "signal_resolved": true,
+          "relative_error": 0.000989154608376358,
+          "power_ratio": 0.9980253756878543
+        },
+        {
+          "k_lo": 8,
+          "k_hi_exclusive": 16,
+          "power_true": 0.006992584770174221,
+          "power_pred": 0.006971149216557437,
+          "error_power": 1.7280509371924385e-08,
+          "true_power_fraction": 0.03884197798834427,
+          "signal_resolved": true,
+          "relative_error": 0.0015720248247759379,
+          "power_ratio": 0.9969345307463109
+        },
+        {
+          "k_lo": 16,
+          "k_hi_exclusive": 32,
+          "power_true": 0.002697912832459638,
+          "power_pred": 0.002672972344827082,
+          "error_power": 6.940825886526462e-08,
+          "true_power_fraction": 0.014986199566695833,
+          "signal_resolved": true,
+          "relative_error": 0.005072144505690249,
+          "power_ratio": 0.9907556362338741
+        },
+        {
+          "k_lo": 32,
+          "k_hi_exclusive": 64,
+          "power_true": 0.0006349045609871627,
+          "power_pred": 0.000606120543399428,
+          "error_power": 4.453332254218658e-07,
+          "true_power_fraction": 0.0035267286408525475,
+          "signal_resolved": true,
+          "relative_error": 0.026484289445619768,
+          "power_ratio": 0.954664024553579
+        },
+        {
+          "k_lo": 64,
+          "k_hi_exclusive": 128,
+          "power_true": 4.072331651846521e-05,
+          "power_pred": 3.191972399987791e-05,
+          "error_power": 6.488855339483304e-07,
+          "true_power_fraction": 0.00022620736334429765,
+          "signal_resolved": true,
+          "relative_error": 0.12622996918709714,
+          "power_ratio": 0.7838193626838944
+        },
+        {
+          "k_lo": 128,
+          "k_hi_exclusive": 256,
+          "power_true": 1.6963570496767708e-07,
+          "power_pred": 4.71597138268261e-08,
+          "error_power": 3.9698826259816975e-08,
+          "true_power_fraction": 9.422819365016593e-07,
+          "signal_resolved": true,
+          "relative_error": 0.48376027145531375,
+          "power_ratio": 0.27800582333661455
+        },
+        {
+          "k_lo": 256,
+          "k_hi_exclusive": 512,
+          "power_true": 2.9236101118086563e-12,
+          "power_pred": 3.6048717896187325e-07,
+          "error_power": 3.604973954558685e-07,
+          "true_power_fraction": 1.6239888873959725e-11,
+          "signal_resolved": true,
+          "relative_error": 351.1489208050725,
+          "power_ratio": 123302.07010361658
+        },
+        {
+          "k_lo": 512,
+          "k_hi_exclusive": 513,
+          "power_true": 2.958546818452341e-37,
+          "power_pred": 3.2075995458299615e-37,
+          "error_power": 1.2327261013819156e-36,
+          "true_power_fraction": 1.643395313417826e-36,
+          "signal_resolved": false,
+          "relative_error": null,
+          "power_ratio": null
+        }
+      ]
+    },
+    {
+      "label": "FD implicit-diffusion Euler 512, linear interpolation",
+      "n": 1024,
+      "rel_l2": 0.0030906066402346553,
+      "abs_l2": 0.0018545004039804888,
+      "true_l2": 0.6000441401496779,
+      "max_error": 0.019720095960330197,
+      "mass_drift": 5.551115123125783e-17,
+      "energy_initial": 0.5,
+      "energy": 0.17954414019580667,
+      "energy_true": 0.18002648506398317,
+      "energy_change": -0.32045585980419333,
+      "layer_width": 0.018548839517182468,
+      "layer_width_true": 0.017270320307834937,
+      "layer_center": 0.0,
+      "layer_half_width": 0.1,
+      "err_in_layer": 0.005803950372693207,
+      "squared_error_in_layer": 3.0080630658213257e-06,
+      "error_fraction_in_layer": 0.8746475273450441,
+      "err_outside_layer": 0.0012618415021551721,
+      "squared_error_outside_layer": 4.311086825424693e-07,
+      "error_fraction_outside_layer": 0.12535247265495583,
+      "highest_band": {
+        "k_lo": 512,
+        "k_hi_exclusive": 513,
+        "power_true": 2.958546818452341e-37,
+        "power_pred": 2.4993498740094e-37,
+        "error_power": 1.089644194572562e-36,
+        "true_power_fraction": 1.643395313417826e-36,
+        "signal_resolved": false,
+        "relative_error": null,
+        "power_ratio": null
+      },
+      "spectral_bands": [
+        {
+          "k_lo": 0,
+          "k_hi_exclusive": 4,
+          "power_true": 0.15342203727065382,
+          "power_pred": 0.15304605008174363,
+          "error_power": 2.3556452802489436e-07,
+          "true_power_fraction": 0.8522192566061941,
+          "signal_resolved": true,
+          "relative_error": 0.0012391134588739165,
+          "power_ratio": 0.9975493273613171
+        },
+        {
+          "k_lo": 4,
+          "k_hi_exclusive": 8,
+          "power_true": 0.016238152674561253,
+          "power_pred": 0.01620936970902563,
+          "error_power": 1.2800538843475692e-08,
+          "true_power_fraction": 0.09019868753639254,
+          "signal_resolved": true,
+          "relative_error": 0.0008878627091504147,
+          "power_ratio": 0.9982274482749067
+        },
+        {
+          "k_lo": 8,
+          "k_hi_exclusive": 16,
+          "power_true": 0.006992584770174221,
+          "power_pred": 0.00697324038405475,
+          "error_power": 1.4094756283606086e-08,
+          "true_power_fraction": 0.03884197798834427,
+          "signal_resolved": true,
+          "relative_error": 0.0014197435861868577,
+          "power_ratio": 0.9972335857547296
+        },
+        {
+          "k_lo": 16,
+          "k_hi_exclusive": 32,
+          "power_true": 0.002697912832459638,
+          "power_pred": 0.002674987751739606,
+          "error_power": 5.892654871518476e-08,
+          "true_power_fraction": 0.014986199566695833,
+          "signal_resolved": true,
+          "relative_error": 0.00467349245454372,
+          "power_ratio": 0.9915026607071172
+        },
+        {
+          "k_lo": 32,
+          "k_hi_exclusive": 64,
+          "power_true": 0.0006349045609871627,
+          "power_pred": 0.0006078275721094341,
+          "error_power": 3.9631517144778677e-07,
+          "true_power_fraction": 0.0035267286408525475,
+          "signal_resolved": true,
+          "relative_error": 0.02498423898909423,
+          "power_ratio": 0.9573526628386024
+        },
+        {
+          "k_lo": 64,
+          "k_hi_exclusive": 128,
+          "power_true": 4.072331651846521e-05,
+          "power_pred": 3.22532374619442e-05,
+          "error_power": 6.009622259107349e-07,
+          "true_power_fraction": 0.00022620736334429765,
+          "signal_resolved": true,
+          "relative_error": 0.12147922637422423,
+          "power_ratio": 0.7920091048409476
+        },
+        {
+          "k_lo": 128,
+          "k_hi_exclusive": 256,
+          "power_true": 1.6963570496767708e-07,
+          "power_pred": 4.879273856225431e-08,
+          "error_power": 3.824480579721623e-08,
+          "true_power_fraction": 9.422819365016593e-07,
+          "signal_resolved": true,
+          "relative_error": 0.47481846096730085,
+          "power_ratio": 0.28763248027030297
+        },
+        {
+          "k_lo": 256,
+          "k_hi_exclusive": 512,
+          "power_true": 2.9236101118086563e-12,
+          "power_pred": 3.6266693310574947e-07,
+          "error_power": 3.6267729915899916e-07,
+          "true_power_fraction": 1.6239888873959725e-11,
+          "signal_resolved": true,
+          "relative_error": 352.2090077020002,
+          "power_ratio": 124047.63947180012
+        },
+        {
+          "k_lo": 512,
+          "k_hi_exclusive": 513,
+          "power_true": 2.958546818452341e-37,
+          "power_pred": 2.4993498740094e-37,
+          "error_power": 1.089644194572562e-36,
+          "true_power_fraction": 1.643395313417826e-36,
+          "signal_resolved": false,
+          "relative_error": null,
+          "power_ratio": null
+        }
+      ]
+    }
+  ],
+  "timings": {
+    "FD explicit Euler 128": {
+      "median_seconds": 0.005327165999915451,
+      "samples_seconds": [
+        0.005647417041473091,
+        0.005298874981235713,
+        0.00535433302866295,
+        0.005327165999915451,
+        0.005209832976106554
+      ],
+      "warmup": 2,
+      "repeats": 5
+    },
+    "FD explicit Euler 512": {
+      "median_seconds": 0.01899070799117908,
+      "samples_seconds": [
+        0.019058957986999303,
+        0.01893945800838992,
+        0.018860625044908375,
+        0.01900395902339369,
+        0.01899070799117908
+      ],
+      "warmup": 2,
+      "repeats": 5
+    },
+    "FD implicit-diffusion Euler 512": {
+      "median_seconds": 0.02207150001777336,
+      "samples_seconds": [
+        0.021957874996587634,
+        0.02242774999467656,
+        0.02207150001777336,
+        0.02210233296500519,
+        0.02182620804524049
+      ],
+      "warmup": 2,
+      "repeats": 5
+    }
+  }
+}

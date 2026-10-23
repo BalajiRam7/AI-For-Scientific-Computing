@@ -1,0 +1,197 @@
+{
+  "config": {
+    "epochs": 5000,
+    "n_colloc": 512,
+    "n_ic": 128,
+    "n_bc": 128,
+    "width": 20,
+    "depth": 8,
+    "lr": 0.001,
+    "nu": 0.003183098861837907,
+    "seed": 1,
+    "sampling": "uniform",
+    "no_importance": false,
+    "w_res": 1.0,
+    "w_ic": 1.0,
+    "w_bc": 1.0,
+    "threads": 1,
+    "device": "cpu",
+    "dtype": "float32",
+    "log_every": 500,
+    "out": "results/pinn_seed1"
+  },
+  "environment": {
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "cpu_model": "arm",
+    "python": "3.14.3",
+    "numpy": "2.3.5",
+    "torch": "2.14.0",
+    "platform": "macOS-26.6.1-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "torch_threads": 1,
+    "cuda_available": false,
+    "cpu_count": 12
+  },
+  "parameters": 3021,
+  "training_seconds": 24.65411599999061,
+  "inference_timing": {
+    "median_seconds": 0.0008394590113312006,
+    "samples_seconds": [
+      0.0008534580119885504,
+      0.0008460000099148601,
+      0.0008392499876208603,
+      0.0008386670087929815,
+      0.0008406249980907887,
+      0.0008394590113312006,
+      0.0008385840046685189
+    ],
+    "warmup": 2,
+    "repeats": 7
+  },
+  "independent_uniform_losses": {
+    "res": 0.026193611323833466,
+    "ic": 0.016037432476878166,
+    "bc": 0.00028457201551645994
+  },
+  "metrics": {
+    "label": "PINN benchmark",
+    "n": 1024,
+    "rel_l2": 0.04793221572900209,
+    "abs_l2": 0.028761445172577924,
+    "true_l2": 0.6000441401496779,
+    "max_error": 0.09852056119570024,
+    "mass_drift": 0.029980576828620542,
+    "energy_initial": 0.5,
+    "energy": 0.17911896848112646,
+    "energy_true": 0.18002648506398314,
+    "energy_change": -0.32088103151887354,
+    "layer_width": 0.0191025647019777,
+    "layer_width_true": 0.017270320307834937,
+    "layer_center": 0.0,
+    "layer_half_width": 0.1,
+    "err_in_layer": 0.05667999042757199,
+    "squared_error_in_layer": 0.000286879221126395,
+    "error_fraction_in_layer": 0.34679887879018684,
+    "err_outside_layer": 0.0446730482535937,
+    "squared_error_outside_layer": 0.0005403415072888107,
+    "error_fraction_outside_layer": 0.6532011212098131,
+    "highest_band": {
+      "k_lo": 512,
+      "k_hi_exclusive": 513,
+      "power_true": 2.958546818452341e-37,
+      "power_pred": 1.4459902222188186e-13,
+      "error_power": 1.445990222222955e-13,
+      "true_power_fraction": 1.643395313417826e-36,
+      "signal_resolved": false,
+      "relative_error": null,
+      "power_ratio": null
+    },
+    "spectral_bands": [
+      {
+        "k_lo": 0,
+        "k_hi_exclusive": 4,
+        "power_true": 0.15342203727065382,
+        "power_pred": 0.15556871241701012,
+        "error_power": 0.00024375481081484013,
+        "true_power_fraction": 0.8522192566061941,
+        "signal_resolved": true,
+        "relative_error": 0.039859580640868246,
+        "power_ratio": 1.0139919608978294
+      },
+      {
+        "k_lo": 4,
+        "k_hi_exclusive": 8,
+        "power_true": 0.016238152674561253,
+        "power_pred": 0.01457914340101226,
+        "error_power": 7.243188346278508e-05,
+        "true_power_fraction": 0.09019868753639254,
+        "signal_resolved": true,
+        "relative_error": 0.06678771403727783,
+        "power_ratio": 0.8978326348570425
+      },
+      {
+        "k_lo": 8,
+        "k_hi_exclusive": 16,
+        "power_true": 0.006992584770174221,
+        "power_pred": 0.006130631535720557,
+        "error_power": 3.711914258293508e-05,
+        "true_power_fraction": 0.03884197798834427,
+        "signal_resolved": true,
+        "relative_error": 0.07285847855038309,
+        "power_ratio": 0.8767332448896165
+      },
+      {
+        "k_lo": 16,
+        "k_hi_exclusive": 32,
+        "power_true": 0.002697912832459638,
+        "power_pred": 0.002346883824610323,
+        "error_power": 2.6011515626316115e-05,
+        "true_power_fraction": 0.014986199566695833,
+        "signal_resolved": true,
+        "relative_error": 0.09819036449340297,
+        "power_ratio": 0.869888677044733
+      },
+      {
+        "k_lo": 32,
+        "k_hi_exclusive": 64,
+        "power_true": 0.0006349045609871627,
+        "power_pred": 0.0004696314344705025,
+        "error_power": 2.908835855865054e-05,
+        "true_power_fraction": 0.0035267286408525475,
+        "signal_resolved": true,
+        "relative_error": 0.21404514619825019,
+        "power_ratio": 0.7396882355677362
+      },
+      {
+        "k_lo": 64,
+        "k_hi_exclusive": 128,
+        "power_true": 4.072331651846521e-05,
+        "power_pred": 2.387835985370666e-05,
+        "error_power": 5.161948445544725e-06,
+        "true_power_fraction": 0.00022620736334429765,
+        "signal_resolved": true,
+        "relative_error": 0.3560289073699362,
+        "power_ratio": 0.5863559723304824
+      },
+      {
+        "k_lo": 128,
+        "k_hi_exclusive": 256,
+        "power_true": 1.6963570496767708e-07,
+        "power_pred": 8.741204004463623e-08,
+        "error_power": 4.2607880469347635e-08,
+        "true_power_fraction": 9.422819365016593e-07,
+        "signal_resolved": true,
+        "relative_error": 0.5011714599427487,
+        "power_ratio": 0.5152926977330156
+      },
+      {
+        "k_lo": 256,
+        "k_hi_exclusive": 512,
+        "power_true": 2.9236101118086563e-12,
+        "power_pred": 9.626438519662798e-11,
+        "error_power": 9.669146309437818e-11,
+        "true_power_fraction": 1.6239888873959725e-11,
+        "signal_resolved": true,
+        "relative_error": 5.750880433415866,
+        "power_ratio": 32.926546808621886
+      },
+      {
+        "k_lo": 512,
+        "k_hi_exclusive": 513,
+        "power_true": 2.958546818452341e-37,
+        "power_pred": 1.4459902222188186e-13,
+        "error_power": 1.445990222222955e-13,
+        "true_power_fraction": 1.643395313417826e-36,
+        "signal_resolved": false,
+        "relative_error": null,
+        "power_ratio": null
+      }
+    ]
+  },
+  "reference": {
+    "method": "centered finite differences with forward Euler",
+    "grid_points": 8192,
+    "cfl": 0.8
+  }
+}

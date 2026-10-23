@@ -1,0 +1,568 @@
+{
+  "validation_seed_ids": [
+    1000000,
+    1000001,
+    1000002,
+    1000003,
+    1000004,
+    1000005,
+    1000006,
+    1000007,
+    1000008,
+    1000009,
+    1000010,
+    1000011,
+    1000012,
+    1000013,
+    1000014,
+    1000015,
+    1000016,
+    1000017,
+    1000018,
+    1000019,
+    1000020,
+    1000021,
+    1000022,
+    1000023,
+    1000024,
+    1000025,
+    1000026,
+    1000027,
+    1000028,
+    1000029,
+    1000030,
+    1000031,
+    1000032,
+    1000033,
+    1000034,
+    1000035,
+    1000036,
+    1000037,
+    1000038,
+    1000039
+  ],
+  "validation_count": 40,
+  "timing_validation_seed_ids": [
+    1000000,
+    1000001,
+    1000002,
+    1000003,
+    1000004
+  ],
+  "timing_warmup": 1,
+  "timing_repeats": 5,
+  "fno_mean_error_same_validation_subset": 0.11646272560464581,
+  "fno_query_seconds": 0.0006072090473026037,
+  "classical_candidates": [
+    {
+      "method": "explicit",
+      "solver_n": 64,
+      "output_n": 256,
+      "validation_mean_rel_l2": 0.07611539614446713,
+      "validation_std_rel_l2": 0.011866216889970478,
+      "validation_count": 40,
+      "query_seconds": 0.005107624980155379,
+      "per_ic_timings": [
+        {
+          "median_seconds": 0.005257084034383297,
+          "samples_seconds": [
+            0.005257709010038525,
+            0.005249125009868294,
+            0.005257084034383297,
+            0.00527579098707065,
+            0.005251583002973348
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.005040207994170487,
+          "samples_seconds": [
+            0.005083958967588842,
+            0.005040207994170487,
+            0.005027125007472932,
+            0.005044542020186782,
+            0.00502554199192673
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.004812917031813413,
+          "samples_seconds": [
+            0.004812917031813413,
+            0.004838208027649671,
+            0.004807792021892965,
+            0.004807249992154539,
+            0.0048421670217067
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.005516457953490317,
+          "samples_seconds": [
+            0.005516457953490317,
+            0.005509749986231327,
+            0.005527541972696781,
+            0.005505709035787731,
+            0.0055220419890247285
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.005107624980155379,
+          "samples_seconds": [
+            0.005107624980155379,
+            0.005101667018607259,
+            0.005106249998789281,
+            0.005135542014613748,
+            0.0051119159907102585
+          ],
+          "warmup": 1,
+          "repeats": 5
+        }
+      ],
+      "meets_fno_mean_error": true
+    },
+    {
+      "method": "explicit",
+      "solver_n": 128,
+      "output_n": 256,
+      "validation_mean_rel_l2": 0.027926631521097294,
+      "validation_std_rel_l2": 0.004189873525464838,
+      "validation_count": 40,
+      "query_seconds": 0.004727000021375716,
+      "per_ic_timings": [
+        {
+          "median_seconds": 0.0048657910083420575,
+          "samples_seconds": [
+            0.004872082965448499,
+            0.004880042048171163,
+            0.004859125008806586,
+            0.004862416011746973,
+            0.0048657910083420575
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.004656041972339153,
+          "samples_seconds": [
+            0.004661250044591725,
+            0.004656041972339153,
+            0.0046525829820893705,
+            0.0046565409866161644,
+            0.00465391599573195
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.004382790997624397,
+          "samples_seconds": [
+            0.004370666982140392,
+            0.004375458986032754,
+            0.004384500032756478,
+            0.004382790997624397,
+            0.004385916981846094
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.005062957992777228,
+          "samples_seconds": [
+            0.005062957992777228,
+            0.005066000041551888,
+            0.005063167016487569,
+            0.00505916599649936,
+            0.00505320803495124
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.004727000021375716,
+          "samples_seconds": [
+            0.004727000021375716,
+            0.0047601250116713345,
+            0.004726540995761752,
+            0.004735875001642853,
+            0.004712208989076316
+          ],
+          "warmup": 1,
+          "repeats": 5
+        }
+      ],
+      "meets_fno_mean_error": true
+    },
+    {
+      "method": "explicit",
+      "solver_n": 256,
+      "output_n": 256,
+      "validation_mean_rel_l2": 0.010240194318158976,
+      "validation_std_rel_l2": 0.002938433880541176,
+      "validation_count": 40,
+      "query_seconds": 0.007759042026009411,
+      "per_ic_timings": [
+        {
+          "median_seconds": 0.007800457999110222,
+          "samples_seconds": [
+            0.007834708027075976,
+            0.0077947499812580645,
+            0.007800457999110222,
+            0.0077883340418338776,
+            0.007830375048797578
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.007759042026009411,
+          "samples_seconds": [
+            0.007759042026009411,
+            0.007772417040541768,
+            0.0077610419830307364,
+            0.007749541022349149,
+            0.007747583033051342
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.007367749989498407,
+          "samples_seconds": [
+            0.007389624952338636,
+            0.007371416955720633,
+            0.007367749989498407,
+            0.0073582499753683805,
+            0.007367458019871265
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.008150790992658585,
+          "samples_seconds": [
+            0.008149583998601884,
+            0.008150790992658585,
+            0.008158916025422513,
+            0.008156874973792583,
+            0.008137791010085493
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.0077235420467332006,
+          "samples_seconds": [
+            0.007722457987256348,
+            0.0077235420467332006,
+            0.00774016696959734,
+            0.007787666982039809,
+            0.00771754200104624
+          ],
+          "warmup": 1,
+          "repeats": 5
+        }
+      ],
+      "meets_fno_mean_error": true
+    },
+    {
+      "method": "implicit",
+      "solver_n": 64,
+      "output_n": 256,
+      "validation_mean_rel_l2": 0.07694527750961892,
+      "validation_std_rel_l2": 0.012581452858031084,
+      "validation_count": 40,
+      "query_seconds": 0.004359500017017126,
+      "per_ic_timings": [
+        {
+          "median_seconds": 0.004357707977760583,
+          "samples_seconds": [
+            0.004377375007607043,
+            0.004357707977760583,
+            0.004359458980616182,
+            0.004349458031356335,
+            0.00435225002001971
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.0043724579736590385,
+          "samples_seconds": [
+            0.004371249990072101,
+            0.004383499966934323,
+            0.004385249980259687,
+            0.004370166047010571,
+            0.0043724579736590385
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.004359500017017126,
+          "samples_seconds": [
+            0.004344457993283868,
+            0.004359500017017126,
+            0.004362625011708587,
+            0.00435616698814556,
+            0.004366250010207295
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.004367290996015072,
+          "samples_seconds": [
+            0.004367290996015072,
+            0.004374916956294328,
+            0.0043641249649226665,
+            0.0043609170243144035,
+            0.004383791994769126
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.004345291992649436,
+          "samples_seconds": [
+            0.004352291987743229,
+            0.004345291992649436,
+            0.004343750013504177,
+            0.004354249977041036,
+            0.004340625018812716
+          ],
+          "warmup": 1,
+          "repeats": 5
+        }
+      ],
+      "meets_fno_mean_error": true
+    },
+    {
+      "method": "implicit",
+      "solver_n": 128,
+      "output_n": 256,
+      "validation_mean_rel_l2": 0.027140320718500734,
+      "validation_std_rel_l2": 0.004736635945771233,
+      "validation_count": 40,
+      "query_seconds": 0.0048009579768404365,
+      "per_ic_timings": [
+        {
+          "median_seconds": 0.004798292007762939,
+          "samples_seconds": [
+            0.00479691696818918,
+            0.004834667022805661,
+            0.004798292007762939,
+            0.004803833027835935,
+            0.004782459000125527
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.0048151249648071826,
+          "samples_seconds": [
+            0.0048006249708123505,
+            0.004851207952015102,
+            0.0048151249648071826,
+            0.0048361250082962215,
+            0.004795583023224026
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.004791666986420751,
+          "samples_seconds": [
+            0.004791666986420751,
+            0.004833416023757309,
+            0.004784666991326958,
+            0.004813625011593103,
+            0.004781583033036441
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.004845625022426248,
+          "samples_seconds": [
+            0.004822541959583759,
+            0.004845625022426248,
+            0.004989792010746896,
+            0.005013707967009395,
+            0.004829291952773929
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.0048009579768404365,
+          "samples_seconds": [
+            0.004780749964993447,
+            0.004817874985747039,
+            0.004783207958098501,
+            0.0048009579768404365,
+            0.004806292010471225
+          ],
+          "warmup": 1,
+          "repeats": 5
+        }
+      ],
+      "meets_fno_mean_error": true
+    },
+    {
+      "method": "implicit",
+      "solver_n": 256,
+      "output_n": 256,
+      "validation_mean_rel_l2": 0.008648161605025198,
+      "validation_std_rel_l2": 0.002126432188245471,
+      "validation_count": 40,
+      "query_seconds": 0.008655291981995106,
+      "per_ic_timings": [
+        {
+          "median_seconds": 0.008709125046152622,
+          "samples_seconds": [
+            0.008713999995961785,
+            0.008714458032045513,
+            0.008692833012901247,
+            0.00870745797874406,
+            0.008709125046152622
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.008699542027898133,
+          "samples_seconds": [
+            0.008710541995242238,
+            0.008665999979712069,
+            0.008699542027898133,
+            0.00867437501437962,
+            0.008706082997377962
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.00864616601029411,
+          "samples_seconds": [
+            0.008663624990731478,
+            0.008655833953525871,
+            0.008603000023867935,
+            0.008641333959531039,
+            0.00864616601029411
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.008655291981995106,
+          "samples_seconds": [
+            0.008692707982845604,
+            0.008655291981995106,
+            0.008658915990963578,
+            0.008624584006611258,
+            0.008630165946669877
+          ],
+          "warmup": 1,
+          "repeats": 5
+        },
+        {
+          "median_seconds": 0.008635792008135468,
+          "samples_seconds": [
+            0.008617416024208069,
+            0.008601250010542572,
+            0.008642250031698495,
+            0.008681750041432679,
+            0.008635792008135468
+          ],
+          "warmup": 1,
+          "repeats": 5
+        }
+      ],
+      "meets_fno_mean_error": true
+    }
+  ],
+  "selected": {
+    "method": "implicit",
+    "solver_n": 64,
+    "output_n": 256,
+    "validation_mean_rel_l2": 0.07694527750961892,
+    "validation_std_rel_l2": 0.012581452858031084,
+    "validation_count": 40,
+    "query_seconds": 0.004359500017017126,
+    "per_ic_timings": [
+      {
+        "median_seconds": 0.004357707977760583,
+        "samples_seconds": [
+          0.004377375007607043,
+          0.004357707977760583,
+          0.004359458980616182,
+          0.004349458031356335,
+          0.00435225002001971
+        ],
+        "warmup": 1,
+        "repeats": 5
+      },
+      {
+        "median_seconds": 0.0043724579736590385,
+        "samples_seconds": [
+          0.004371249990072101,
+          0.004383499966934323,
+          0.004385249980259687,
+          0.004370166047010571,
+          0.0043724579736590385
+        ],
+        "warmup": 1,
+        "repeats": 5
+      },
+      {
+        "median_seconds": 0.004359500017017126,
+        "samples_seconds": [
+          0.004344457993283868,
+          0.004359500017017126,
+          0.004362625011708587,
+          0.00435616698814556,
+          0.004366250010207295
+        ],
+        "warmup": 1,
+        "repeats": 5
+      },
+      {
+        "median_seconds": 0.004367290996015072,
+        "samples_seconds": [
+          0.004367290996015072,
+          0.004374916956294328,
+          0.0043641249649226665,
+          0.0043609170243144035,
+          0.004383791994769126
+        ],
+        "warmup": 1,
+        "repeats": 5
+      },
+      {
+        "median_seconds": 0.004345291992649436,
+        "samples_seconds": [
+          0.004352291987743229,
+          0.004345291992649436,
+          0.004343750013504177,
+          0.004354249977041036,
+          0.004340625018812716
+        ],
+        "warmup": 1,
+        "repeats": 5
+      }
+    ],
+    "meets_fno_mean_error": true
+  },
+  "training_plus_checkpoint_selection_seconds": 35.157913959003054,
+  "fitting_label_generation_seconds": 76.50874758296413,
+  "test_label_generation_seconds_excluded": 13.187813791970257,
+  "one_time_reference_checks_seconds_excluded": 7.231159958988428,
+  "setup_seconds": 111.66666154196719,
+  "qualification": "Each query begins with the same float64 array of 256 input samples and returns 256 output values. Both methods use the first five validation inputs, one untimed call and five timed calls per input; the reported cost is the median of the five per-input medians. FNO timing includes float32 conversion and prediction; Euler timing includes restriction to its internal grid, initial-value copying, any sparse factorization, all timesteps, and periodic linear output interpolation. Model loading, imports and reference-error calculations are excluded. The selected classical candidate is the fastest among the two Euler methods at internal n=64,128,256 whose mean error on all 40 validation examples is no larger than the FNO mean. Setup includes training and validation label generation plus training/checkpoint selection; it excludes test labels, numerical refinement checks, benchmark calibration, and post-training diagnostics."
+}

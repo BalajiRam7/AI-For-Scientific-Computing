@@ -1,0 +1,197 @@
+{
+  "config": {
+    "epochs": 5000,
+    "n_colloc": 512,
+    "n_ic": 128,
+    "n_bc": 128,
+    "width": 20,
+    "depth": 8,
+    "lr": 0.001,
+    "nu": 0.003183098861837907,
+    "seed": 0,
+    "sampling": "focused",
+    "no_importance": false,
+    "w_res": 1.0,
+    "w_ic": 1.0,
+    "w_bc": 1.0,
+    "threads": 1,
+    "device": "cpu",
+    "dtype": "float32",
+    "log_every": 500,
+    "out": "results/pinn_focused"
+  },
+  "environment": {
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "cpu_model": "arm",
+    "python": "3.14.3",
+    "numpy": "2.3.5",
+    "torch": "2.14.0",
+    "platform": "macOS-26.6.1-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "torch_threads": 1,
+    "cuda_available": false,
+    "cpu_count": 12
+  },
+  "parameters": 3021,
+  "training_seconds": 25.061798417009413,
+  "inference_timing": {
+    "median_seconds": 0.0008385840046685189,
+    "samples_seconds": [
+      0.0008323749934788793,
+      0.0008360839856322855,
+      0.0008296669984702021,
+      0.000838999985717237,
+      0.0008385840046685189,
+      0.0013410420215222985,
+      0.0009130830003414303
+    ],
+    "warmup": 2,
+    "repeats": 7
+  },
+  "independent_uniform_losses": {
+    "res": 0.010821988806128502,
+    "ic": 0.008639510720968246,
+    "bc": 0.0006368501926772296
+  },
+  "metrics": {
+    "label": "PINN benchmark",
+    "n": 1024,
+    "rel_l2": 0.3166317697751081,
+    "abs_l2": 0.1899930380387755,
+    "true_l2": 0.6000441401496779,
+    "max_error": 1.2734959355226558,
+    "mass_drift": 0.05936816925441235,
+    "energy_initial": 0.5,
+    "energy": 0.1680683277963504,
+    "energy_true": 0.18002648506398314,
+    "energy_change": -0.3319316722036496,
+    "layer_width": 0.019300442855538263,
+    "layer_width_true": 0.017270320307834937,
+    "layer_center": 0.0,
+    "layer_half_width": 0.1,
+    "err_in_layer": 0.6313946478768353,
+    "squared_error_in_layer": 0.035599291038079614,
+    "error_fraction_in_layer": 0.9862022169774305,
+    "err_outside_layer": 0.04288977474529474,
+    "squared_error_outside_layer": 0.0004980634651239699,
+    "error_fraction_outside_layer": 0.013797783022569355,
+    "highest_band": {
+      "k_lo": 512,
+      "k_hi_exclusive": 513,
+      "power_true": 2.958546818452341e-37,
+      "power_pred": 4.3797244421920305e-11,
+      "error_power": 4.3797244421913106e-11,
+      "true_power_fraction": 1.643395313417826e-36,
+      "signal_resolved": false,
+      "relative_error": null,
+      "power_ratio": null
+    },
+    "spectral_bands": [
+      {
+        "k_lo": 0,
+        "k_hi_exclusive": 4,
+        "power_true": 0.15342203727065382,
+        "power_pred": 0.1456263891146053,
+        "error_power": 0.0033356393787812634,
+        "true_power_fraction": 0.8522192566061941,
+        "signal_resolved": true,
+        "relative_error": 0.1474503043904982,
+        "power_ratio": 0.9491882111935711
+      },
+      {
+        "k_lo": 4,
+        "k_hi_exclusive": 8,
+        "power_true": 0.016238152674561253,
+        "power_pred": 0.014092253105289557,
+        "error_power": 0.0027114745855528065,
+        "true_power_fraction": 0.09019868753639254,
+        "signal_resolved": true,
+        "relative_error": 0.4086339623880297,
+        "power_ratio": 0.8678482945517891
+      },
+      {
+        "k_lo": 8,
+        "k_hi_exclusive": 16,
+        "power_true": 0.006992584770174221,
+        "power_pred": 0.00570727788376273,
+        "error_power": 0.004543452694572941,
+        "true_power_fraction": 0.03884197798834427,
+        "signal_resolved": true,
+        "relative_error": 0.8060725563005184,
+        "power_ratio": 0.8161900171888131
+      },
+      {
+        "k_lo": 16,
+        "k_hi_exclusive": 32,
+        "power_true": 0.002697912832459638,
+        "power_pred": 0.00218161875606622,
+        "error_power": 0.0054843186280598925,
+        "true_power_fraction": 0.014986199566695833,
+        "signal_resolved": true,
+        "relative_error": 1.4257631385197056,
+        "power_ratio": 0.808632039485604
+      },
+      {
+        "k_lo": 32,
+        "k_hi_exclusive": 64,
+        "power_true": 0.0006349045609871627,
+        "power_pred": 0.0004401765729801725,
+        "error_power": 0.001951408475564092,
+        "true_power_fraction": 0.0035267286408525475,
+        "signal_resolved": true,
+        "relative_error": 1.753153205021295,
+        "power_ratio": 0.6932956542252223
+      },
+      {
+        "k_lo": 64,
+        "k_hi_exclusive": 128,
+        "power_true": 4.072331651846521e-05,
+        "power_pred": 2.0496286327846627e-05,
+        "error_power": 2.2120884311287003e-05,
+        "true_power_fraction": 0.00022620736334429765,
+        "signal_resolved": true,
+        "relative_error": 0.7370206773793393,
+        "power_ratio": 0.5033059210330518
+      },
+      {
+        "k_lo": 128,
+        "k_hi_exclusive": 256,
+        "power_true": 1.6963570496767708e-07,
+        "power_pred": 8.744079621916289e-08,
+        "error_power": 2.3396876851187122e-07,
+        "true_power_fraction": 9.422819365016593e-07,
+        "signal_resolved": true,
+        "relative_error": 1.1744115414854381,
+        "power_ratio": 0.5154622149613145
+      },
+      {
+        "k_lo": 256,
+        "k_hi_exclusive": 512,
+        "power_true": 2.9236101118086563e-12,
+        "power_pred": 2.8592725115018592e-08,
+        "error_power": 2.8592193757153098e-08,
+        "true_power_fraction": 1.6239888873959725e-11,
+        "signal_resolved": true,
+        "relative_error": 98.89264925564223,
+        "power_ratio": 9779.937823969984
+      },
+      {
+        "k_lo": 512,
+        "k_hi_exclusive": 513,
+        "power_true": 2.958546818452341e-37,
+        "power_pred": 4.3797244421920305e-11,
+        "error_power": 4.3797244421913106e-11,
+        "true_power_fraction": 1.643395313417826e-36,
+        "signal_resolved": false,
+        "relative_error": null,
+        "power_ratio": null
+      }
+    ]
+  },
+  "reference": {
+    "method": "centered finite differences with forward Euler",
+    "grid_points": 8192,
+    "cfl": 0.8
+  }
+}
